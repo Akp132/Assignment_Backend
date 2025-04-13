@@ -60,7 +60,7 @@ app.delete("/api/users/:id", async (req, res) => {
 });
 
 // ✅ Port
-const PORT = process.env.PORT || 5050;
+const PORT = parseInt(process.env.PORT) || 5050;
 app.listen(PORT, () => {
   console.log(`🚀 Backend running on port ${PORT}`);
 });
